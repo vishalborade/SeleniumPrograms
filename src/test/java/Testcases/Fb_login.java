@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+//This is for fb login 
 public class Fb_login
 {
 	public static void main(String[] args) throws InterruptedException 
