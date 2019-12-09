@@ -30,18 +30,13 @@ public class Fb_login
 		rv2.sendKeys("9890582367");
 		Thread.sleep(300);
 		
-		WebElement rv3 = dr.findElement(By.id("u_0_b"));
-		rv3.click();
-		Thread.sleep(1000);
-	
-		WebElement rv4 = dr.findElement(By.id("logoutMenu"));
+		//WebElement rv3 = dr.findElement(By.id("u_0_b"));
+		WebElement rv4 = dr.findElement(By.xpath("//button[@name='login']"));
 		rv4.click();
 		Thread.sleep(1000);
-		
+	
 		dr.quit();
 		
-	
-	
 		
 	}
 
