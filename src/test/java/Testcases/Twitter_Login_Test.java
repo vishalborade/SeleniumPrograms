@@ -30,10 +30,10 @@ public static void main(String[] args)
 	Thread.sleep(500);
 	dr.findElement(By.xpath("//button[@class='submit EdgeButton EdgeButton--primary EdgeButtom--medium']")).click();
 	Thread.sleep(500);
-	//WebElement msg = dr.findElement(By.xpath("//span[@class='message-text']"));
-	Thread.sleep(500);
-	//System.out.println(msg);
-	
+	WebElement rv = dr.findElement(By.xpath("//span[@class='message-text']"));
+	String msg = rv.getText();
+	System.out.println(msg);
+	Thread.sleep(200);
 	dr.quit();
 
 	}
